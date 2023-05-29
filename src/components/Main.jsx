@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text } from "react-native";
-import { Routes, Route } from "react-router-native";
+import { Routes, Route, Link } from "react-router-native";
 import StartMenu from "./StartMenu";
 import Game from "./Game";
 
@@ -21,6 +21,5 @@ const Main = () => {
     </View>
   );
 };
-
 
 export default Main;
