@@ -1,26 +1,25 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
-import Constants from "expo-constants";
-import { Link, Routes, Route } from "react-router-native";
+import { View, Text } from "react-native";
+import { Routes, Route, Link } from "react-router-native";
 import StartMenu from "./StartMenu";
+import Game from "./Game";
 
 const Main = () => {
   return (
-    <View style={styles.container}>
+    <View>
       <Routes>
-        <Route path="/" exact element={<StartMenu />} />
-        <Route path="/game" exact element={<Text>GAME</Text>} />
+        <Route
+          path="/"
+          exact
+          element={
+            <StartMenu />
+          }
+        />
+        <Route path="/game" exact element={<Game />} />
         <Route path="/options" exact element={<Text>Options</Text>} />
       </Routes>
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    paddingTop: Constants.statusBarHeight,
-    backgroundColor: "#ff8c4d",
-  },
-});
 
 export default Main;
