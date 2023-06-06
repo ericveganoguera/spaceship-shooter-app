@@ -17,6 +17,7 @@ const StartMenu = () => {
           <Text style={styles.button}>OPTIONS</Text>
         </Link>
       </View>
+      <View style={{height: '20%'}}></View>
     </View>
   );
 };
@@ -24,24 +25,33 @@ const StartMenu = () => {
 const styles = StyleSheet.create({
   container: {
     justifyContent: "center",
-    height: "70%",
+    height: "60%",
   },
   button: {
-    backgroundColor: "#ddd",
+    backgroundColor: "#ffd359",
     textAlign: "center",
     fontSize: 40,
     borderRadius: 10,
+    borderWidth: 2,
     marginBottom: 50,
     paddingVertical: 10,
     paddingHorizontal: 30,
     alignSelf: "center",
   },
   titleText: {
-    fontSize: 30,
+    fontSize: 40,
     textAlign: "center",
     alignItems: "center",
+    fontWeight: "bold",
+    color: "#ff4778",
+    textShadowColor: "rgba(0, 0, 0, 0.75)",
+    textShadowOffset: { width: -1, height: 1 },
+    textShadowRadius: 10,
   },
-  title: { height: "20%", justifyContent: "center" },
+  title: {
+    height: "20%",
+    justifyContent: "center",
+  },
 });
 
 export default StartMenu;
